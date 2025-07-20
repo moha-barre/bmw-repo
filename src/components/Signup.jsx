@@ -5,7 +5,7 @@ import logo from '../assets/logo.png';
 
 const Signup = () => {
   const navigate = useNavigate();
-  const backend = 
+  
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -72,7 +72,7 @@ const Signup = () => {
       await new Promise(resolve => setTimeout(resolve, 2000));
       
       // Here you would typically make an API call to your backend
-      const response = await axios.post( backend + '/api/auth/signup', formData);
+      
       
       toast.success('Account created successfully! Welcome to BMW.');
       navigate('/');
